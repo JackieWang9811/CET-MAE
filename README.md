@@ -46,6 +46,21 @@ python train_decoding_eeg_2_text_cet_mae.py -c config/train_eval_decoding_eeg_te
 python eval_decoding_eeg_2_text_cet_mae.py -c config/train_eval_decoding_eeg_text_gpu2_7575.yaml
 ```
 
-
+## Reference
+If you find this repo useful, please consider citing:
+```bash
+@inproceedings{wang-etal-2024-enhancing-eeg,
+    title = "Enhancing {EEG}-to-Text Decoding through Transferable Representations from Pre-trained Contrastive {EEG}-Text Masked Autoencoder",
+    author = "Wang, Jiaqi  and Song, Zhenxi  and Ma, Zhengyu  and Qiu, Xipeng  and Zhang, Min  and Zhang, Zhiguo",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.393/",
+    doi = "10.18653/v1/2024.acl-long.393",
+    pages = "7278--7292"
+}
+```
 
    
