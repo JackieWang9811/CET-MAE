@@ -1,0 +1,27 @@
+log_dir: ./logs/logging/cet-mae-pretrain/4_dataset
+
+state: INFO
+
+cuda: 2
+
+dataset_path: ./datasets/data_word_sentence_5/
+
+cet_mae_checkpoint_name: cet_mae_model_4_tasks_mask_75_75_611_text_frozen_011001loss_weight_gelu_bart_frozen.pt
+
+folder_name: cet_mae_model_4_tasks_mask_75_75_611_text_frozen_011001loss_weight_gelu_bart_frozen
+
+pretrained_model: ./models/huggingface/bart-large
+
+eeg_bands: [ '_t1', '_t2', '_a1', '_a2', '_b1', '_b2', '_g1', '_g2' ]
+
+model_name: CET-MAE
+
+num_epoch_pretrain: 100
+
+cet_mae_lr: 5e-7
+
+cet_mae_optimizer: adamw
+
+batch_size: 32
+
+save_path: ./checkpoints/cet_mae

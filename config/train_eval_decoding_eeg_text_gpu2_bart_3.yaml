@@ -1,0 +1,27 @@
+log_dir: ./logs/logging/cet_mae_eeg2text/3dataset
+
+state: INFO
+
+dataset_path: ./datasets/data_word_sentence_3/
+
+cuda: 0
+
+model_name: cet-mae_bart
+
+num_epoch_fintune: 50
+
+T_max: 20
+
+cet_mae_checkpoint: ./checkpoints/cet_mae/cet_mae_model_3_tasks_mask_75_75_611_text_frozen_011001loss_weight_gelu_bart_frozen.pt
+
+lr_finetune: 2e-7
+
+batch_size: 32
+
+save_path: ./checkpoints/cet_mae_decoding/3dataset/your_path
+
+finetune_optimizer: adamw
+
+eeg_bands: [ '_t1', '_t2', '_a1', '_a2', '_b1', '_b2', '_g1', '_g2' ]
+
+task_name: task1_task2_taskNRv2

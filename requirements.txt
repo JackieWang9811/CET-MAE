@@ -1,0 +1,16 @@
+torch
+transformers
+nltk
+tqdm
+rouge_score
+evaluate
+wandb
+fuzzy_match
+rouge
+matplotlib
+scikit-learn
+SentencePiece
+einops
+absl-py
+h5py
+jiwer

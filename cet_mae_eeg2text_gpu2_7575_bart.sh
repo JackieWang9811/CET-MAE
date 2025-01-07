@@ -1,0 +1,2 @@
+ python pre_train_eval_cet_mae_later_project_bart.py -c config/train_eval_cet_mae_gpu2_bart.yaml
+ python train_decoding_eeg_2_text_cet_mae.py -c config/train_eval_decoding_eeg_text_gpu2_bart.yaml

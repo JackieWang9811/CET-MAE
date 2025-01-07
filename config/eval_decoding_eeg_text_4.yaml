@@ -1,0 +1,27 @@
+log_dir: ./logs/logging/cet_mae_eeg2text/4dataset
+
+state: INFO
+
+dataset_path: ./datasets/data_word_sentence_4/
+
+cuda: 0
+
+model_name: cet-mae_bart
+
+num_epoch_fintune: 40
+
+# best
+eeg2text_checkpoint: ./checkpoints/cet_mae_decoding/4dataset/your checkpoints/
+
+
+text_rusults: 4tasks_translation_results
+
+lr_finetune: 2e-7
+
+batch_size: 32
+
+finetune_optimizer: adamw
+
+eeg_bands: [ '_t1', '_t2', '_a1', '_a2', '_b1', '_b2', '_g1', '_g2' ]
+
+task_name: task1_task2_taskNRv2_taskTSRv1
